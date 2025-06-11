@@ -1,0 +1,96 @@
+
+/* Login background styles */
+.login-background {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  min-height: 100vh; /* Full height of the viewport */
+  background: url('src/components/pic/background.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Cover the entire viewport */
+  width: 100%; /* Ensure it covers the full width */
+  position: relative; /* Position relative for any potential child elements */
+}
+
+/* Wrapper styles */
+.wrapper {
+  width: 420px;
+  background: #c62034; /* Background color for the form */
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+/* Header styles */
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Input box styles */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #ffffff; /* White text color */
+  padding: 10px 10px 10px 20px; /* Ensure space for icon */
+  z-index: 1;
+  position: relative;
+}
+
+.input-box input:focus {
+  background: rgba(255, 255, 255, 0.4); /* Brighter background on focus */
+  border-color: #fff;
+}
+
+.input-box input::placeholder {
+  color: #ffffff; /* Placeholder text color */
+}
+
+/* Icon styles */
+.input-box .icon {
+  position: absolute;
+  right: 15px; /* Position the icon inside the input box */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ffffff; /* Icon color */
+  z-index: 0;
+}
+
+/* Remember and forgot link styles */
+
+
+/* Button styles */
+.wrapper button {
+  width: 100%;
+  height: 45px;
+  background: #ffffff; /* Button background */
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333; /* Button text color */
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper button:hover {
+  background-color: #c62034; /* Hover background */
+  color: #fff; /* Hover text color */
+}
+
+/* Register link styles */

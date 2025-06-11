@@ -1,0 +1,24 @@
+.sv_main{
+    border: #9ccb3e !important;
+    font-size: 22px !important;
+    accent-color: #76cee3 !important;
+}
+.sv_nav_btn{
+    color: rgb(255, 255, 255) !important;
+    background-color: #ff4a00  !important;
+}
+.sv-components-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #d57b1f !important;
+}
+.sv_main.sv_default_css .sv_q_rating_item.active .sv_q_rating_item_text {
+    background-color:#ff4a00    ; /* Set background color to orange */
+    border-color: #ff4a00   ; /* Set border color to orange */
+    color: white; /* Set text color to white */
+}
+textarea:focus {
+    border: 1px solid#9ccb3e !important; /* Change this color to whatever you prefer */
+    outline: none; /* Remove the default outline */
+}

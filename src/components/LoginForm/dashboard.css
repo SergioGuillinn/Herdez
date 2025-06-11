@@ -1,0 +1,52 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background: url('src/components/pic/background2.jpg'); /* White background for Herdez feel */
+    position: relative;
+    background-size: cover;
+
+  }
+  
+  .dashboard-section {
+    width: 25%; /* Adjust width for each section */
+    background-color: #c62034; /* Herdez red */
+    color: #fff;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .dashboard-section h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-section:hover {
+    transform: translateY(-10px); /* Add hover effect for interactivity */
+  }
+  
+  .dashboard-section p {
+    font-size: 1em;
+    color: #e0e0e0; /* Slightly lighter text color */
+  }
+  
+  .dashboard-section a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3em;
+    color: #c62034; /* Herdez red */
+  }

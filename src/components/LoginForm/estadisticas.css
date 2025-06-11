@@ -1,0 +1,157 @@
+/* General Page Styling */
+.estadisticas-page {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: url('src/components/pic/fondo2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f9f9f9;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.estadisticas-page h1 {
+  color: #c62034; /* Accent color for title */
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add depth to the title */
+}
+
+/* Filters Section */
+.estadisticas-page .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.estadisticas-page label {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #aaa;
+  letter-spacing: 0.8px;
+}
+
+.estadisticas-page select,
+.estadisticas-page input[type="date"] {
+  width: 250px;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2b2b3d; /* Dark input background */
+  color: #f9f9f9; /* Light text */
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.estadisticas-page select:focus,
+.estadisticas-page input[type="date"]:focus {
+  border: 2px solid #c62034; /* Accent color on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(198, 32, 52, 0.5); /* Glow effect */
+}
+
+/* Button Styling */
+.estadisticas-page button {
+  padding: 12px 20px;
+  font-size: 18px; /* Bigger font for better readability */
+  font-weight: bold;
+  color: #fff; /* White text for contrast */
+  background-color: #c62034; /* Accent red */
+  border: none;
+  border-radius: 8px; /* Softer corners */
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Add depth */
+  transition: all 0.3s ease-in-out;
+}
+
+.estadisticas-page button:hover {
+  background-color: #a51e2c; /* Darker red for hover */
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5); /* More shadow on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.estadisticas-page button:active {
+  transform: scale(0.96); /* Press effect */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Reduce shadow on press */
+}
+
+/* Panels Section */
+.estadisticas-page .panels {
+  display: flex; /* Horizontal layout */
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.estadisticas-page .panel {
+  flex: 1; /* Make panels equal width */
+  padding: 25px;
+  border-radius: 12px;
+  background-color: rgba(30, 30, 47, 0.85); /* Slightly transparent dark background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left; /* Align text to the left for readability */
+}
+
+.estadisticas-page .panel:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.estadisticas-page .panel h2 {
+  margin-top: 0;
+  font-size: 28px; /* Slightly smaller for balance */
+  font-weight: bold;
+  color: #c62034; /* Accent red for titles */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.estadisticas-page .panel ul,
+.estadisticas-page .panel p {
+  font-size: 20px; /* Bigger, prettier text inside panels */
+  color: #f0f0f0; /* Softer white for readability */
+  line-height: 1.8; /* Increased line height for better spacing */
+  margin-bottom: 15px;
+}
+
+.estadisticas-page .panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.estadisticas-page .panel ul li {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05); /* Light background for contrast */
+  border-bottom: 1px solid #444; /* Subtle separator */
+  border-radius: 6px; /* Rounded corners for list items */
+  margin-bottom: 8px; /* Space between items */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.estadisticas-page .panel ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .estadisticas-page .filters {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .estadisticas-page .panels {
+    flex-direction: column; /* Stack panels vertically */
+  }
+
+  .estadisticas-page select,
+  .estadisticas-page input[type="date"],
+  .estadisticas-page button {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

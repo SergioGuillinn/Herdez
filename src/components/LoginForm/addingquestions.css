@@ -1,0 +1,111 @@
+/* AddQuestions specific styles */
+
+/* Page background */
+.adding-questions-page {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Maintain consistent font styling */
+  color: #f9f9f9; /* Default text color for light readability */
+  background: url('src/components/pic/fondoagregarpreguntas.jpg') no-repeat center center fixed; /* Add background image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Container for the add question form */
+.adding-questions-page .add-question-container {
+  width: 80%;
+  max-width: 800px; /* Ensure the container doesn’t get too wide */
+  padding: 20px;
+  background-color: rgba(30, 30, 47, 0.85); /* Semi-transparent dark background */
+  border-radius: 12px; /* Softer curves */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for depth */
+  position: relative; /* Position relative to ensure the container is separate from the background */
+}
+
+/* Title of the page */
+.adding-questions-page .add-question-container h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #c62034; /* Accent color for the title */
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form styles */
+.adding-questions-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Add consistent spacing between form elements */
+}
+
+.adding-questions-page label {
+  font-size: 18px;
+  color: #aaa; /* Subtle text color */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.adding-questions-page input, 
+.adding-questions-page select {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2b2b3d; /* Input field dark background */
+  color: #f9f9f9; /* Light text for readability */
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.adding-questions-page input:focus, 
+.adding-questions-page select:focus {
+  border: 2px solid #c62034; /* Accent color focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(198, 32, 52, 0.5); /* Glow effect */
+}
+
+/* Styling for button */
+.adding-questions-page button {
+  padding: 14px;
+  font-size: 16px;
+  color: #f9f9f9;
+  background-color: #c62034; /* Accent color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.adding-questions-page button:hover {
+  background-color: #a5192b; /* Darker shade on hover */
+  box-shadow: 0 4px 10px rgba(198, 32, 52, 0.6); /* Hover glow effect */
+}
+
+.adding-questions-page button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .adding-questions-page .add-question-container {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .adding-questions-page form input[type="text"], 
+  .adding-questions-page form select {
+    font-size: 14px;
+  }
+
+  .adding-questions-page button {
+    font-size: 14px;
+  }
+}
